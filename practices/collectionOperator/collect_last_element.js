@@ -1,7 +1,7 @@
 'use strict';
 
 function collect_last_element(collection) {
-  //write code here
+  return collection.slice(-1)[0];
 }
 
 module.exports = collect_last_element;

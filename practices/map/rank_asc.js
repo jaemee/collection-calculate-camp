@@ -1,6 +1,7 @@
 'use strict';
 var rank_asc = function(collection){
-  return [6,5,4,3,2];
+  return collection.map((number, index, array, x) => { array.indexOf(number)[0] < x });
+  // collection.sort().reverse();
 };
 
 module.exports = rank_asc;
